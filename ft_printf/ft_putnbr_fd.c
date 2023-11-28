@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 00:59:59 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/27 19:16:17 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/28 10:37:36 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ int	ft_putnbr_fd(int n, int fd, int *i)
 	}
 	else
 	{
-		ft_putstr_fd("-2147483648", fd);
+		if (ft_putstr_fd("-2147483648", fd) < 0)
+			return (-1);
 		*i = 11;
 	}
 	return (*i);

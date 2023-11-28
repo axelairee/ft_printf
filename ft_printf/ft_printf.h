@@ -6,12 +6,12 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 19:21:50 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/27 19:22:06 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/28 10:52:15 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>

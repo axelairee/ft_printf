@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 10:52:52 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/27 19:05:21 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/28 16:47:25 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_printf(const char *format, ...)
 	int		i;
 	va_list	args;
 
+	if (!format)
+		return (-1);
 	i = 0;
 	va_start(args, format);
 	while (*format != '\0')

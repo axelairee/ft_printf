@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 11:44:05 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/27 19:03:21 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/28 10:35:23 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ unsigned long	ft_print_p(unsigned long args)
 			return (-1);
 		return (5);
 	}
-	write(1, "0x", 2);
+	if (write(1, "0x", 2) < 0)
+		return (-1);
 	return (ft_putnbr_base(args, base, 1) + 2);
 }
